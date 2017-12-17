@@ -100,8 +100,22 @@
         >>> 3 * 3
         0
 
-        >>> 15 % 12  # division avec reste
+        >>> 9 / 3
+        3.0
+    </pre>
+</section>
+
+<section>
+    <h3>Base : comme en math (suite)</h3>
+    <pre>
+        >>> 15 % 12
         3
+
+        >>> 16 % 2
+        0
+
+        >>> 16 % 16
+        0
     </pre>
 </section>
 
@@ -261,16 +275,237 @@
     <h2>Attention<br><code>==</code> n'est pas <code>=</code></h2>
 </section>
 
+<section>
+    <h3>Les types simples</h3>
+    <ul class="incremental">
+        <li>les "ints"<ul><li>aka "les entiers"<li>1, 2, 4, ..., 10, ...</ul></li>
+        <li>les "float"<ul><li> aka "les nombres à virgules" <li><code>1.1</code>, <code>10.42</code>, <code>.2</code>, <code>0.3</code></ul></li>
+        <li>les "strings" <ul><li>aka "les chaînes de caractères"<li>"bonjour", "bière", "a"</ul></li>
+    </ul>
+</section>
+
+<section>
+    <h3>Les listes</h3>
+    <ul class="incremental">
+        <li>contient une "liste" de n'importe quoi<ul><li>[1, "a", 42.3]</li><li>lettres = ["a", "b", "c"]</li></ul></li>
+        <li>accès:<ul><li>["a", "b", "c"][0] → "a"</li><li>commence à <b>ZERO</b> et pas à 1 !</li><li>["a", "b", "c"][1] → "b"</li></ul></li>
+        <li>modification:<ul><li>lettres = ["a", "b", "c"]</li><li>lettres[0] = "pouet"</li><li>lettres → ["pouet", "b", "c"]</li></ul></li>
+    </ul>
+</section>
+
+<section>
+    <h3>Les strings comme des listes</h3>
+    <ul class="incremental">
+        <li>c'est une liste d'éléments d'une lettre<ul><li>"abc"[0] → "a"</li><li>"abc"[1] → "b"</li></ul></li>
+        <li>concatenation :<ul><li>"abc" + "pouet" → "abcpouet" </li></ul></li>
+    </ul>
+</section>
+
+<section>
+    <h3>Les tuples, des listes non modifiables</h3>
+    <ul class="incremental">
+        <li>comme une liste avec des () à la place des []<ul><li>("a", "b", "c")</li><li>(0, 1, 2)[0] → 0</li></ul></li>
+        <li>impossible de les modifiers (pas important normalement pour vous)</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Les dictionnaires</h3>
+    <ul class="incremental">
+        <li>représente une correspondance 1 à 1<ul><li>{"a": 1, 3.14: "pi"}</li></ul></li>
+        <li>accès:<ul><li>{"a": 1, "b": 42}["b"] → 42</li><li>{"a": 42, "b": 3}[1] → <i>erreur</i></li></ul></li>
+        <li>modification:<ul><li>lettres = ["a", "b", "c"]</li><li>lettres[0] = "pouet"</li><li>lettres → ["pouet", "b", "c"]</li></ul></li>
+    </ul>
+</section>
+
+<section>
+    <h3>Logique booléenne</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> True and True
+    True
+
+    >>> True and False
+    False
+
+    >>> False and True
+    False
+
+    >>> False and False
+    False
+            </pre>
+        </div>
+        <div>
+            <pre>
+    >>> True or True
+    True
+
+    >>> True or False
+    True
+
+    >>> False or True
+    True
+
+    >>> False or False
+    False
+            </pre>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Logique booléenne (suite)</h3>
+    <pre>
+    >>> not True
+    False
+
+    >>> not False
+    True
+    </pre>
+</section>
+
+<section>
+    <h3>operation + assignation</h3>
+    <pre>
+    >>> a = 1
+    >>> a += 1
+    >>> a
+    2
+
+    >>> a *= 3
+    >>> a
+    6
+    </pre>
+</section>
+
+<section>
+    <h2>Contrôle du flux d'execution</h2>
+</section>
+
+<section>
+    <h3>if</h3>
+    <pre>
+    >>> if True:
+            print "s'affiche"
+    s'affiche
+
+    >>> if False:
+            print "s'affiche pas"
+
+    >>> if 1 == 1:
+            print "s'affiche"
+    s'affiche
+    </pre>
+</section>
+
+<section>
+    <h3>if</h3>
+    <pre>
+    >>> if 0:
+            print s'affiche pas
+
+    >>> if {}:
+            print s'affiche pas
+
+    >>> if []:
+            print s'affiche pas
+
+    >>> if 0.0:
+            print s'affiche pas
+
+    >>> if "":
+            print s'affiche pas
+    </pre>
+</section>
+
+<section>
+    <h3>if/else</h3>
+    <pre>
+    >>> if True:
+            print "if"
+        else:
+            print "else"
+    if
+
+    >>> if False:
+            print "if"
+        else:
+            print "else"
+    else
+    </pre>
+</section>
+
+<section>
+    <h3>if/else</h3>
+    <pre>
+    >>> if True:
+            print "if"
+        else:
+            print "else"
+    if
+
+    >>> if False:
+            print "if"
+        else:
+            print "else"
+    else
+    </pre>
+</section>
+
+<section>
+    <h3>if/elif/else</h3>
+    <pre>
+    >>> if False:
+            print "if"
+        elif True:
+            print "elif"
+        else:
+            print "else"
+    elif
+    </pre>
+</section>
+
+<section>
+    <h3>if/elif/else (suite)</h3>
+    <pre>
+    >>> if False:
+            print "if"
+        elif False:
+            print "elif"
+        elif True:
+            print "elif2"
+        else:
+            print "else"
+    elif2
+    </pre>
+</section>
+
+<section>
+    <h3>if/elif/else (suite)</h3>
+    <pre>
+    >>> if False:
+            print "if"
+        elif False:
+            print "elif"
+        elif True:
+            print "elif2"
+        else:
+            print "else"
+    elif2
+    </pre>
+</section>
+
+<section>
+    <h3>Divers</h3>
+    <ul class="incremental">
+        <li>les () pour changer la priorité<ul><li>1 + 2 * 3 → 7</li><li>(1 + 2) * 3 → 9</li></ul></li>
+        <li>'print' pour afficher un élément<ul><li>print "pouet" → pouet</li><li>print [1, 2, 3][0] → 1</li></ul></li>
+    </ul>
+</section>
+
 <!--
-# logique booléenne : and / or / not
-# float
-# strings
-# les () comme opérateur de priorité
-# print
-# types de structures de données (listes/tuples/dictionnaires)
-# index sur une liste -> ZERO
-# operation + assignation
-# if
+# if, elif, else
 # for
 # while
 # fonctions -> arguments/contexte/appel/return
@@ -620,7 +855,7 @@ Ideas/future/dreams:
   }
 
   h3 {
-    margin: 100px 0 50px 100px;
+    margin: 100px 0 30px 100px;
   }
 
   h5 {
@@ -770,6 +1005,12 @@ Ideas/future/dreams:
 
   .hidden {
       visibility: hidden;
+  }
+
+  pre {
+      padding: 25px 10px 5px 10px;
+      font-size: 25px;
+      background-color: #ddd;
   }
 
 </style>
