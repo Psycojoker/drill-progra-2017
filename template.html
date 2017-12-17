@@ -7,43 +7,280 @@
 <!-- One section is one slide -->
 
 <section>
-    <div class="center" style="height: 100%; display: flex">
-        <img src="img/logo.png" style="margin: auto">
+    <h1>Drill Exam Informatique</h1>
+</section>
+
+<section>
+    <h3>Programme</h3>
+    <ul>
+        <li>Jour 1<ul><li>programmation python</li><li>base de données</li></ul></li>
+        <li>Jour 2<ul><li>base de données</li><li>calcul binaire</li></ul></li>
+    </ul>
+</section>
+
+<section>
+    <h3>Contexte</h3>
+    <ul>
+        <li>je vais pas vous noter</li>
+        <li>je suis là pour vous aider</li>
+        <li>y a pas de question stupide</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Structure d'un examen</h3>
+    <ul>
+        <li>une question de programmation python</li>
+        <li>une question de base de données</li>
+        <li>3 questions de théorie (calcul binaire)</li>
+    </ul>
+</section>
+
+
+<section>
+    <h2>Programmation python</h2>
+</section>
+
+<section>
+    <h3>Objectif</h3>
+    <ul class="incremental">
+        <li><b>comprendre</b> un programme python</li>
+        <li>être capable d'en déterminer l'execution</li>
+        <li>... pour pouvoir afficher le résultat</li>
+    </ul>
+</section>
+
+<section>
+    <img style="height: 100%" src="./example.png">
+</section>
+
+<section>
+    <h3>Comprendre un programme</h3>
+    <ul class="incremental">
+        <li>une suite d'opérations séquentielles</li>
+        <li>comme une recette de cuisine</li>
+        <li>déterministe → toujours le même résultat</li>
+        <li>logique très proche des maths élémentaires</li>
+        <li>... avec des concepts nouveaux (mais simples)</li>
+        <li>compréhension ~intuitive~</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Syntaxe des exemples</h3>
+    <pre>
+        >>> code exécuté
+        résultat
+    </pre>
+</section>
+
+<section>
+    <h3>Syntaxe des exemples</h3>
+    <pre>
+        >>> code exécuté
+        résultat
+    </pre>
+
+    <h5>Exemple</h5>
+    <pre>
+        >>> 1 + 1
+        2
+    </pre>
+</section>
+
+<section>
+    <h3>Base : comme en math</h3>
+    <pre>
+        >>> 1 + 1
+        2
+
+        >>> 1 - 1
+        0
+
+        >>> 3 * 3
+        0
+
+        >>> 15 % 12  # division avec reste
+        3
+    </pre>
+</section>
+
+<section>
+    <h3>Les assignations</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> 
+            </pre>
+        </div>
+        <div>
+            <small>Le contexte</small>
+            <table class="table context-table">
+                <tr>
+                    <td class="hidden">a</td>
+                    <td class="hidden">1</td>
+                </tr>
+                <tr>
+                    <td class="hidden">b</td>
+                    <td class="hidden">1</td>
+                </tr>
+            </table>
+        </div>
     </div>
 </section>
 
 <section>
-    <h2>Me</h2>
+    <h3>Les assignations</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> a = 1
+    >>> a
+    1
+            </pre>
+        </div>
+        <div>
+            <small>Le contexte</small>
+            <table class="table context-table">
+                <tr>
+                    <td>a</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="hidden">b</td>
+                    <td class="hidden">3</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </section>
 
 <section>
-    <h3>YunoHost short history</h3>
-    <ul class="incremental">
-        <li>2011 - Beudbeud install his mail server, kload wants the same</li>
-        <li>2012 - first release</li>
-        <li>Feature list grows:
-        <ul class="incremental">
-            <li>xmpp</li>
-            <li>several domains</li>
-            <li>"applications"</li>
-            <li>SSO</li>
-            <li>etc...</li>
-        </ul>
-        </li>
-    </ul>
+    <h3>Les assignations</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> a = 1
+    >>> a
+    1
+
+    >>> b = 3
+    >>> b
+    3
+            </pre>
+        </div>
+        <div>
+            <small>Le contexte</small>
+            <table class="table context-table">
+                <tr>
+                    <td>a</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </section>
 
 <section>
-    <h3>Political context</h3> 
-    <ul>
-        <li>Internet Centralization</li>
-        <li>FDN/FFDN</li>
-        <li>La Quadrature du Net</li>
-        <li>HADOPI laws & co</li>
-        <li>GAFAM</li>
-        <li>mass surveillance</li>
-    </ul>
+    <h3>Les assignations</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> a = 1
+    >>> a
+    1
+
+    >>> b = 3
+    >>> b
+    3
+
+    >>> b = a
+    >>> b
+    1
+            </pre>
+        </div>
+        <div>
+            <small>Le contexte</small>
+            <table class="table context-table">
+                <tr>
+                    <td>a</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </section>
+
+
+
+<section>
+    <h3>Les comparaisons</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> 1 < 2
+    True
+
+    >>> 1 > 2
+    False
+
+    >>> 1 == 2
+    False
+
+    >>> 1 == 1
+    True
+            </pre>
+        </div>
+        <div>
+            <pre>
+    >>> 1 != 2
+    True
+
+    >>> 1 <= 2
+    True
+
+    >>> 1 >= 2
+    False
+
+    >>> 1 <= 1
+    True
+            </pre>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Attention<br><code>==</code> n'est pas <code>=</code></h2>
+</section>
+
+<!--
+# logique booléenne : and / or / not
+# float
+# strings
+# les () comme opérateur de priorité
+# print
+# types de structures de données (listes/tuples/dictionnaires)
+# index sur une liste -> ZERO
+# operation + assignation
+# if
+# for
+# while
+# fonctions -> arguments/contexte/appel/return
+
+# sql
+# suivres slides ?
+# query d'update
+-->
+
+<!-- -------------------------------------------- -->
 
 <section>
     <h2>But what is YunoHost?</h2>
@@ -307,12 +544,12 @@ Ideas/future/dreams:
 
 <style>
   html, .view body {
-    background-color: #050505;
+    /* background-color: #050505;*/
       counter-reset: slideidx;
   }
 
   body, .view section {
-    color: #eee;
+    /* color: #eee; */
   }
 
   /* A section is a slide. It's size is 800x600, and this will never change */
@@ -326,11 +563,11 @@ Ideas/future/dreams:
     counter-increment: slideidx;
     content: counter(slideidx, decimal-leading-zero);
     position: absolute; bottom: -80px; right: 100px;
-    color: white;
+    /* color: white; */
   }
 
   a {
-      color: #D7AF5F;
+      /* color: #D7AF5F; */
       text-decoration: none;
   }
 
@@ -348,12 +585,12 @@ Ideas/future/dreams:
   }
 
   .date {
-      color: #bbb;
+      /* color: #bbb; */
       font-size: normal;
   }
 
   .view head > title {
-    color: white;
+    /* color: white; */
     text-align: center;
     margin: 1em 0 1em 0;
   }
@@ -384,6 +621,10 @@ Ideas/future/dreams:
 
   h3 {
     margin: 100px 0 50px 100px;
+  }
+
+  h5 {
+    margin: 0 0 50px 100px;
   }
 
   ul, ol {
@@ -418,7 +659,7 @@ Ideas/future/dreams:
   /* Figures are displayed full-page, with the caption
      on top of the image/video */
   figure {
-    background-color: black;
+    /* background-color: black; */
     width: 100%;
     height: 100%;
   }
@@ -439,7 +680,7 @@ Ideas/future/dreams:
     width: 100%;
     padding: 40px;
     text-align: right;
-    background-color: #F3F4F8;
+    /* background-color: #F3F4F8; */
     border-top: 1px solid #CCC;
   }
 
@@ -493,7 +734,7 @@ Ideas/future/dreams:
   }
 
   small {
-      color: #b6b6b6;
+      /* color: #b6b6b6; */
   }
 
   .links {
@@ -507,6 +748,30 @@ Ideas/future/dreams:
   .links li {
       margin-bottom: 8px;
   }
+
+  .two-columns {
+      display: flex;
+  }
+
+  .two-columns > div {
+      flex-grow: 1;
+  }
+
+  .context-table {
+      border-collapse: collapse;
+      border: 2px solid black;
+      text-align: center;
+  }
+
+  .context-table td {
+      border: 2px solid black;
+      margin: 0;
+  }
+
+  .hidden {
+      visibility: hidden;
+  }
+
 </style>
 
 <!-- {{{{ dzslides core
