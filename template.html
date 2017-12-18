@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <meta charset="utf-8">
-<title>YunoHost</title>
+<title>Drill Exam Informatique</title>
 
 <!-- Your Slides -->
 <!-- One section is one slide -->
@@ -52,6 +52,10 @@
 
 <section>
     <img style="height: 100%" src="./example.png">
+</section>
+
+<section>
+    <h2>Rappel théorique</h2>
 </section>
 
 <section>
@@ -319,6 +323,15 @@
 </section>
 
 <section>
+    <h3>Combinaisons</h3>
+    <pre>
+    a = [(1, 2, 3), 42, "pouet"]
+
+    b = [[(1, 2), (3, "pouet")]}, [1, 2, 3]]
+    </pre>
+</section>
+
+<section>
     <h3>Logique booléenne</h3>
     <div class="two-columns">
         <div>
@@ -482,17 +495,64 @@
 </section>
 
 <section>
-    <h3>if/elif/else (suite)</h3>
+    <h3>while</h3>
     <pre>
-    >>> if False:
-            print "if"
-        elif False:
-            print "elif"
-        elif True:
-            print "elif2"
-        else:
-            print "else"
-    elif2
+    >>> a = 0
+    >>> while a < 3:
+        print a
+        a += 1
+    0
+    1
+    2
+    </pre>
+</section>
+
+<section>
+    <h3>for</h3>
+    <pre>
+    >>> for i in ["a", "b", "c"]:
+        print i
+    a
+    b
+    c
+    </pre>
+</section>
+
+<section>
+    <h3>for</h3>
+    <pre>
+    >>> for i in "abc":
+        print i
+    a
+    b
+    c
+    </pre>
+</section>
+
+<section>
+    <h3>fonctions</h3>
+    <pre>
+    >>> def fonction(argument1, argument2, argument3):
+        print argument1
+        print argument2
+        print argument3
+
+    >>> fonction("a", "b", "c")
+    a
+    b
+    c
+    </pre>
+</section>
+
+<section>
+    <h3>fonctions : contexte</h3>
+    <pre>
+    >>> def fonction(a):
+        print a
+
+    >>> a = 3
+    >>> fonction(4)
+    4
     </pre>
 </section>
 
@@ -504,12 +564,110 @@
     </ul>
 </section>
 
-<!--
-# if, elif, else
-# for
-# while
-# fonctions -> arguments/contexte/appel/return
+<section>
+    <h2>Questions d'examens</h2>
+</section>
 
+<section>
+    <h2>Base de données</h2>
+</section>
+
+<section>
+    <h3>Objectif</h3>
+    <ul class="incremental">
+        <li>traduire un scénario en schéma SQL</li>
+        <li>PARFOIS devoir écrire des requètes SQL</li>
+    </ul>
+</section>
+
+<!-- TODO -->
+
+<section>
+    <div style="margin: 40px">
+        <img style="width: 100%; height: 100%" src="img/example_sql_1.png" />
+    </div>
+</section>
+
+<section>
+    <img style="width: 100%; height: 100%" src="img/resolution_sql_1.png" />
+</section>
+
+<section>
+    <h3>Queries</h3>
+    <pre>
+    INSERT INTO Livre
+    (idLivre, idMaison, numéro, titre)
+    VALUES (1, 2, 3, "guerre et paix")
+
+    SELECT idCritique
+    FROM Critique, Livre, Jonction, Auteur
+    WHERE Critique.idLivre = Livre.idLivre
+      AND Livre.idLivre = Jonction.idLivre
+      AND Jonction.idAuteur = Auteur.idAuteur
+      AND Auteur.nomAteur = "Mr X"
+    </pre>
+</section>
+
+<section>
+    <h2>Rappel théorique</h2>
+</section>
+
+<section>
+    <h3>Principe</h3>
+    <ul class="incremental">
+        <li>structurer des données par table SQL</li>
+        <li>comme ~excel~ mais avec des liens entre "feuilles"</li>
+        <li>(et donc moins de duplication)</li>
+        <li>faire des requètes dessus pour : lire, rajouter, modifier, supprimer</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Modélisation de schémas</h2>
+</section>
+
+<section>
+    <img style="width: 100%; height: 100%" src="img/table.png" />
+</section>
+
+<section>
+    <h3>Clé primaire (PK)</h3>
+    <ul class="incremental">
+        <li>identifiant avec une garantie d'unicité</li>
+        <li>ISBN, plaque d'immatriculation, matricule...</li>
+        <li>ou un id géré par la base de donnée</li>
+        <li>souligné/en gras</li>
+    </ul>
+</section>
+
+<section>
+    <img style="width: 100%; height: 100%" src="img/table.png" />
+</section>
+
+<section>
+    <h3>Relations (avec clés étrangères)</h3>
+    <ul class="incremental">
+        <li>1-1</li>
+        <li>1-N</li>
+        <li>N-N</li>
+        <li>N-N avec table de jointure avancé</li>
+    </ul>
+</section>
+
+<section>
+    <img style="width: 100%; height: 100%" src="img/resolution_sql_1.png" />
+</section>
+
+<section>
+    <h2>Queries (requètes)</h2>
+</section>
+
+<section>
+    <h3>Clé primaire</h3>
+</section>
+
+<!--
+# TODO mettre les exemples
 # sql
 # suivres slides ?
 # query d'update
