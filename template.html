@@ -11,14 +11,6 @@
 </section>
 
 <section>
-    <h3>Programme</h3>
-    <ul>
-        <li>Jour 1<ul><li>programmation python</li><li>base de données</li></ul></li>
-        <li>Jour 2<ul><li>base de données</li><li>calcul binaire</li></ul></li>
-    </ul>
-</section>
-
-<section>
     <h3>Contexte</h3>
     <ul>
         <li>je vais pas vous noter</li>
@@ -32,10 +24,17 @@
     <ul>
         <li>une question de programmation python</li>
         <li>une question de base de données</li>
-        <li>3 questions de théorie (calcul binaire)</li>
+        <li>3/4 questions de théorie (calcul binaire)</li>
     </ul>
 </section>
 
+<section>
+    <h3>Programme</h3>
+    <ul>
+        <li>Jour 1<ul><li>programmation python</li><li>base de données</li></ul></li>
+        <li>Jour 2<ul><li>base de données</li><li>calcul binaire</li></ul></li>
+    </ul>
+</section>
 
 <section>
     <h2>Programmation python</h2>
@@ -85,6 +84,7 @@
         résultat
     </pre>
 
+    <br>
     <h5>Exemple</h5>
     <pre>
         >>> 1 + 1
@@ -237,7 +237,41 @@
     </div>
 </section>
 
+<section>
+    <h3>Les assignations</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> a = b = c = 3
+    >>> a
+    3
 
+    >>> b
+    3
+
+    >>> c
+    3
+            </pre>
+        </div>
+        <div>
+            <small>Le contexte</small>
+            <table class="table context-table">
+                <tr>
+                    <td>a</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>c</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
 
 <section>
     <h3>Les comparaisons</h3>
@@ -323,7 +357,7 @@
 </section>
 
 <section>
-    <h3>Combinaisons</h3>
+    <h3>Combinaisons de différents types</h3>
     <pre>
     a = [(1, 2, 3), 42, "pouet"]
 
@@ -351,17 +385,17 @@
         </div>
         <div>
             <pre>
-    >>> True or True
-    True
+>>> True or True
+True
 
-    >>> True or False
-    True
+>>> True or False
+True
 
-    >>> False or True
-    True
+>>> False or True
+True
 
-    >>> False or False
-    False
+>>> False or False
+False
             </pre>
         </div>
     </div>
@@ -390,6 +424,14 @@
     >>> a
     6
     </pre>
+</section>
+
+<section>
+    <h3>Divers</h3>
+    <ul class="incremental">
+        <li>les () pour changer la priorité<ul><li>1 + 2 * 3 → 7</li><li>(1 + 2) * 3 → 9</li></ul></li>
+        <li>'print' pour afficher un élément<ul><li>print "pouet" → pouet</li><li>print [1, 2, 3][0] → 1</li></ul></li>
+    </ul>
 </section>
 
 <section>
@@ -450,23 +492,6 @@
 </section>
 
 <section>
-    <h3>if/else</h3>
-    <pre>
-    >>> if True:
-            print "if"
-        else:
-            print "else"
-    if
-
-    >>> if False:
-            print "if"
-        else:
-            print "else"
-    else
-    </pre>
-</section>
-
-<section>
     <h3>if/elif/else</h3>
     <pre>
     >>> if False:
@@ -499,8 +524,8 @@
     <pre>
     >>> a = 0
     >>> while a < 3:
-        print a
-        a += 1
+            print a
+            a += 1
     0
     1
     2
@@ -511,7 +536,7 @@
     <h3>for</h3>
     <pre>
     >>> for i in ["a", "b", "c"]:
-        print i
+            print i
     a
     b
     c
@@ -522,7 +547,7 @@
     <h3>for</h3>
     <pre>
     >>> for i in "abc":
-        print i
+            print i
     a
     b
     c
@@ -533,9 +558,9 @@
     <h3>fonctions</h3>
     <pre>
     >>> def fonction(argument1, argument2, argument3):
-        print argument1
-        print argument2
-        print argument3
+            print argument1
+            print argument2
+            print argument3
 
     >>> fonction("a", "b", "c")
     a
@@ -548,7 +573,7 @@
     <h3>fonctions : contexte</h3>
     <pre>
     >>> def fonction(a):
-        print a
+            print a
 
     >>> a = 3
     >>> fonction(4)
@@ -557,15 +582,11 @@
 </section>
 
 <section>
-    <h3>Divers</h3>
-    <ul class="incremental">
-        <li>les () pour changer la priorité<ul><li>1 + 2 * 3 → 7</li><li>(1 + 2) * 3 → 9</li></ul></li>
-        <li>'print' pour afficher un élément<ul><li>print "pouet" → pouet</li><li>print [1, 2, 3][0] → 1</li></ul></li>
-    </ul>
+    <h2>Questions d'examens</h2>
 </section>
 
 <section>
-    <h2>Questions d'examens</h2>
+    <img style="height: 100%" src="./example.png">
 </section>
 
 <section>
@@ -579,8 +600,6 @@
         <li>PARFOIS devoir écrire des requètes SQL</li>
     </ul>
 </section>
-
-<!-- TODO -->
 
 <section>
     <div style="margin: 40px">
@@ -647,11 +666,15 @@
 <section>
     <h3>Relations (avec clés étrangères)</h3>
     <ul class="incremental">
-        <li>1-1</li>
-        <li>1-N</li>
-        <li>N-N</li>
+        <li>1-1 "un à un"</li>
+        <li>1-N "un à plusieurs"</li>
+        <li>N-N "plusieurs à plusieurs"</li>
         <li>N-N avec table de jointure avancé</li>
     </ul>
+</section>
+
+<section>
+    <img style="width: 100%; height: 100%" src="img/table.png" />
 </section>
 
 <section>
@@ -663,271 +686,177 @@
 </section>
 
 <section>
-    <h3>Clé primaire</h3>
+    <h3>SELECT</h3>
+        <div>
+            <pre>
+    SELECT colonne1, colonne2, ...
+    FROM table
+    [WHERE conditions]
+            </pre>
+        </div>
+</section>
+
+<section>
+    <h3>SELECT</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    SELECT titre, numéro    
+    FROM LIVRE      
+            </pre>
+        </div>
+        <div>
+            <img style="width: 100%; height: 100%" src="img/resolution_sql_1.png" />
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>SELECT</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    SELECT titre
+    FROM LIVRE
+    WHERE LIVRE.numéro = 3   
+            </pre>
+        </div>
+        <div>
+            <img style="width: 100%; height: 100%" src="img/resolution_sql_1.png" />
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Conditions</h3>
+    <ul class="incremental">
+        <li>presque comme en python</li>
+        <li><code>table.field &gt; 2<br>AND table.id = table2.idTable<br>OR table.field &lt; 10</code></li>
+    </ul>
+</section>
+
+<section>
+    <h3>SELECT Jointures</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    SELECT
+        titre
+    FROM
+        LIVRE, MAISON
+    WHERE
+        LIVRE.idMaison = MAISON.idMaison
+        AND MAISON.nomMaison = "galimard"   
+            </pre>
+        </div>
+        <div>
+            <img style="width: 100%; height: 100%" src="img/resolution_sql_1.png" />
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>TODO: aggregats (count, avg, ...)</h2>
+</section>
+
+<section>
+    <h3>INSERT INTO</h3>
+    <pre>
+    INSERT INTO table
+        (colonne1, colonne2, ...)
+    VALUES
+        (valeur1, valeur2, ...)
+    </pre>
+</section>
+
+<section>
+    <h3>INSERT INTO</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    INSERT INTO LIVRE
+        (idLivre, idMaison, numéro, titre)
+    VALUES
+        (1, 2, 3, "Guerre et paix")
+            </pre>
+        </div>
+        <div>
+            <img style="width: 100%; height: 100%" src="img/resolution_sql_1.png" />
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>UPDATE</h3>
+    <pre>
+    UPDATE table
+    SET Colonne1 = valeur1, colonne2, valeur2
+    [WHERE conditions]
+    </pre>
+</section>
+
+<section>
+    <h3>UPDATE</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    UPDATE Livre
+    SET titre = "Manuel"
+    WHERE idLivre = 42
+            </pre>
+        </div>
+        <div>
+            <img style="width: 100%; height: 100%" src="img/resolution_sql_1.png" />
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>DELETE</h3>
+    <pre>
+    DELETE FROM table
+    [WHERE conditions]
+    </pre>
+</section>
+
+<section>
+    <h3>DELETE</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    DELETE FROM Livre
+    WHERE idLivre = 42
+            </pre>
+        </div>
+        <div>
+            <img style="width: 100%; height: 100%" src="img/resolution_sql_1.png" />
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Exercices</h2>
+</section>
+
+<section>
+    <div>
+        <img style="width: 100%; height: 100%" src="img/exo_sql_1.png" />
+    </div>
+</section>
+
+<section>
+    <div>
+        <br>
+        <img style="width: 100%; height: 100%" src="img/solution_sql_1.png" />
+    </div>
 </section>
 
 <!--
-# TODO mettre les exemples
 # sql
-# suivres slides ?
 # query d'update
 -->
 
 <!-- -------------------------------------------- -->
-
-<section>
-    <h2>But what is YunoHost?</h2>
-</section>
-
-<section style="background-image: url('img/admin.png'); background-size: 100%; background-repeat: no-repeat; background-position-y: center;">
-</section>
-
-<section style="background-image: url('img/apps.png'); background-size: 100%; background-repeat: no-repeat; background-position-y: center;">
-</section>
-
-<section style="background-image: url('img/app_install_zerobin.png'); background-size: 100%; background-repeat: no-repeat; background-position-y: center;">
-</section>
-
-<section style="background-image: url('img/tools.png'); background-size: 100%; background-repeat: no-repeat; background-position-y: center;">
-</section>
-
-<section style="background-image: url('img/ssoportal.png'); background-size: 100%; background-repeat: no-repeat; background-position-y: center;">
-</section>
-
-<section>
-    <h2>Architecture</h2>
-</section>
-
-<section>
-    <div style="display: flex; align-items: center; height: 100%">
-        <div>
-            <img style="width: 100%;" src="img/domains.png" />
-        </div>
-        <div style="width: 20px">
-        </div>
-        <div>
-            <img style="width: 100%;" src="img/cli.png" />
-        </div>
-    </div>
-</section>
-
-<section>
-    <div style="display: flex; align-items: center; height: 100%">
-        <div>
-            <img style="width: 100%;" src="img/domain_list.py.png" />
-        </div>
-        <div style="width: 20px">
-        </div>
-        <div>
-            <img style="width: 100%;" src="img/actionmap.png" />
-        </div>
-    </div>
-</section>
-
-<section>
-    <div style="display: flex; align-items: center; height: 100%">
-        <div>
-            <img style="width: 100%;" src="img/files.png" />
-        </div>
-        <div style="width: 20px">
-        </div>
-        <div>
-            <img style="width: 100%;" src="img/help.png" />
-        </div>
-    </div>
-</section>
-
-<section style="background-image: url('img/architecture.png'); background-size: 100%; background-repeat: no-repeat; background-position-y: center;">
-</section>
-
-<section>
-    <h2>How apps are made</h2>
-</section>
-
-<section>
-    <div style="display: flex; align-items: center; height: 100%">
-        <div>
-            <img style="width: 100%;" src="img/app_root.png" />
-        </div>
-        <div style="width: 20px">
-        </div>
-        <div>
-            <img style="width: 100%;" src="img/app_scripts.png" />
-        </div>
-        <div style="width: 20px">
-        </div>
-        <div>
-            <img style="width: 100%;" src="img/manifest.json.png" />
-        </div>
-    </div>
-</section>
-
-<section>
-    <div style="display: flex; align-items: center; height: 100%">
-        <div>
-            <img style="width: 100%;" src="img/app_install_jirafeau.png" />
-        </div>
-        <div style="width: 20px">
-        </div>
-        <div>
-            <img style="width: 100%;" src="img/app_install.png" />
-        </div>
-    </div>
-</section>
-
-<section>
-    <h3 style="margin-bottom: 20px">Features list</h3>
-    <ul style="margin-top: 0px">
-    <li>debian based</li>
-    <li>users management: emails + xmpp</li>
-    <li>domain management: dyndns, own self-signed CA or Let's Encrypt</li>
-    <li>applications with SSO</li>
-    <li>services + regen-conf + hooks</li>
-    <li>firewall + fail2ban</li>
-    <li>backup</li>
-    <li>small monitoring</li>
-    <li>and growing...</li>
-    </ul>
-</section>
-
-<section>
-    <h3>Community, organisation and others</h3>
-    <ul class="incremental">
-    <li>1000 - 2000 users (hard to count)</li>
-    <li>20 official app, 63 (129) community</li>
-    <li>collective with our own constitution</li>
-    <li>Continuous Integration of apps</li>
-    <li>apps levels</li>
-    <li>Forum and xmpp chatrooms</li>
-    <li>Translations</li>
-    <li>quite le french</li>
-    </ul>
-</section>
-
-<section>
-    <h3>Friends</h3>
-    <ul>
-    <li>The Internet Cube / La Brique Internet</li>
-    <li>FFDN (associative ISPs)</li>
-    <li>Framasoft / CHATONS</li>
-    <li>and others &lt;3</li>
-    </ul>
-</section>
-
-<!--
-
-<section>
-    <h3>Future/Dreams/Ideas</h3>
-    <ul>
-        <li>borg backup
-        <li>friends backup each others
-        <li>monitoring
-        <li>friends monitor each others
-        <li>auto detect error
-        <li>auto repair errors?
-        <li>"app market"
-    </ul>
-</section>
--->
-
-<section>
-    <h3>Install</h3>
-    <ul>
-        <li>debian + script
-        <li>iso
-        <li>rpi
-        <li>olimex
-        <li>vagrant
-    </ul>
-</section>
-
-<section>
-    <h3>Join Us! \o/</h3>
-    <ul class="incremental">
-        <li>Friendly team friendly community &lt;3
-        <li>backend: python (simple), bash (lua)
-        <li>frontend: html/js (sammy.js)
-        <li>apps: full bash, sysadmin
-        <li>security: code review
-        <li>infra: debian, deb toolchain, ruby
-        <li>community: communicate, support
-        <li>translation!
-        <li>documentation
-        <li>testing (beta)
-    </ul>
-</section>
-
-<section>
-    <center>
-        <h3 style="margin-left: 0">Links</h3>
-        <ul class="links">
-            <li>yunohost.org
-            <li>demo.yunohost.org
-            <li>yunohost.org/apps
-            <li>forum.yunohost.org
-            <li>dev.yunohost.org (redmine)
-            <li>github.com/yunohost
-            <li>xmpp://dev@conference.yunohost.org
-        </ul>
-    </center>
-</section>
-
-<section>
-    <h2>Questions?</h2>
-</section>
-
-<!--
-moi
-"YunoHost est un outil qui vous permet d’installer et d’utiliser facilement votre propre serveur.""
-histoire:
- * 2011 beudbeud install son serveur mail, kload "je veux le même"
- * c'est super chiant à porter -> coder un truc
-partant de là YunoHost a évoléu petit à petit:
-* emails
-* xmpp
-* several domains
-* dyndns
-* "applications"
-* services
-* firewalls
-* backup
-* SSO
-* etc...
-Context fortement politisé: lqdn, ffdn, etc...
-
-graphique architecture
-
-cli vs admin
-exemple de code + yaml + commande
-
-regen conf
-hooks
-
-community
-* forum
-* # of users
-* very le french
-
-Framasoft
-La brique Internet
-
-organisation
-* schéma
-
-latest release with LE
-
-Apps:
-* levels
-* CI
-
-Ideas/future/dreams:
-* borg backup
-* friends backup each others
-* monitoring
-* friends monitor each others
-* auto detect error (bad domain configuration, blocked ports)
-* "app market"
--->
 
 <!-- Your Style -->
 <!-- Define the style of your presentation -->
