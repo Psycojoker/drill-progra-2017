@@ -1019,6 +1019,606 @@ False
 </section>
 
 <section>
+    <h2>Calcul binaire</h2>
+</section>
+
+<section>
+    <h3>Objectif</h3>
+    <ul>
+        <li>utilisé dans quasi chaque fois une question théorique</li>
+        <li>être à l'aise avec ça</li>
+        <li>pas y passer trop de temps</li>
+        <li>base 2 → base 10</li>
+        <li>base 10 → base 2</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Compter en binaire</h3>
+    <table class="table context-table fixed">
+        <tbody class="incremental">
+            <tr>
+                <td>0</td>
+                <td>00000000</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>00000001</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>00000010</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>00000011</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>00000100</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>00000101</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>00000110</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>00000111</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>00001000</td>
+            </tr>
+        </tbody>
+    </table class="table">
+</section>
+
+<section>
+    <h3>Binare → base 10</h3>
+</section>
+
+<section>
+    <h3>Binare → base 10 : préparer sa table</h3>
+    <table class="table context-table fixed">
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table class="table">
+</section>
+
+<section>
+    <h3>Binare → base 10 : préparer sa table</h3>
+    <table class="table context-table fixed">
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table class="table">
+</section>
+
+<section>
+    <h3>Binare → base 10 : préparer sa table</h3>
+    <table class="table context-table fixed">
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table class="table">
+</section>
+
+<section>
+    <h3>Binare → base 10 : préparer sa table</h3>
+    <table class="table context-table fixed">
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>8</td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table class="table">
+</section>
+
+<section>
+    <h3>Binare → base 10 : préparer sa table</h3>
+    <table class="table context-table fixed">
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>16</td>
+                <td>8</td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table class="table">
+</section>
+
+<section>
+    <h3>Binare → base 10 : préparer sa table</h3>
+    <table class="table context-table fixed">
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>32</td>
+                <td>16</td>
+                <td>8</td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table class="table">
+</section>
+
+<section>
+    <h3>Binare → base 10 : préparer sa table</h3>
+    <table class="table context-table fixed">
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>64</td>
+                <td>32</td>
+                <td>16</td>
+                <td>8</td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table class="table">
+</section>
+
+<section>
+    <h3>Binare → base 10 : préparer sa table</h3>
+    <table class="table context-table fixed">
+        <tbody>
+            <tr>
+                <td></td>
+                <td>128</td>
+                <td>64</td>
+                <td>32</td>
+                <td>16</td>
+                <td>8</td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Binare → base 10 : préparer sa table</h3>
+    <table class="table context-table fixed">
+        <tbody>
+            <tr>
+                <td>256</td>
+                <td>128</td>
+                <td>64</td>
+                <td>32</td>
+                <td>16</td>
+                <td>8</td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Binare → base 10 : insérer son nombre (001010110)</h3>
+    <table class="table context-table fixed">
+        <tbody>
+            <tr>
+                <td>256</td>
+                <td>128</td>
+                <td>64</td>
+                <td>32</td>
+                <td>16</td>
+                <td>8</td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Binare → base 10 : additionner</h3>
+    <table class="table context-table fixed">
+        <tbody>
+            <tr>
+                <td>256</td>
+                <td>128</td>
+                <td>64</td>
+                <td>32</td>
+                <td>16</td>
+                <td>8</td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table fixed">
+        <tbody>
+            <tr>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Binare → base 10 : additionner</h3>
+    <table class="table context-table fixed">
+        <tbody>
+            <tr>
+                <td>256</td>
+                <td>128</td>
+                <td>64</td>
+                <td>32</td>
+                <td>16</td>
+                <td>8</td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table fixed">
+        <tbody>
+            <tr>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table fixed">
+        <tbody>
+            <tr>
+                <td></td>
+                <td>0</td>
+                <td>+</td>
+                <td>0</td>
+                <td>+</td>
+                <td>64</td>
+                <td>+</td>
+                <td>0</td>
+                <td>+</td>
+                <td>16</td>
+                <td>+</td>
+                <td>0</td>
+                <td>+</td>
+                <td>4</td>
+                <td>+</td>
+                <td>2</td>
+                <td>+</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h3>Binare → base 10 : additionner</h3>
+    <table class="table context-table fixed">
+        <tbody>
+            <tr>
+                <td>256</td>
+                <td>128</td>
+                <td>64</td>
+                <td>32</td>
+                <td>16</td>
+                <td>8</td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table fixed">
+        <tbody>
+            <tr>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table fixed">
+        <tbody>
+            <tr>
+                <td></td>
+                <td>0</td>
+                <td>+</td>
+                <td>0</td>
+                <td>+</td>
+                <td>64</td>
+                <td>+</td>
+                <td>0</td>
+                <td>+</td>
+                <td>16</td>
+                <td>+</td>
+                <td>0</td>
+                <td>+</td>
+                <td>4</td>
+                <td>+</td>
+                <td>2</td>
+                <td>+</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="center">=</div>
+</section>
+
+<section>
+    <h3>Binare → base 10 : additionner</h3>
+    <table class="table context-table fixed">
+        <tbody>
+            <tr>
+                <td>256</td>
+                <td>128</td>
+                <td>64</td>
+                <td>32</td>
+                <td>16</td>
+                <td>8</td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table fixed">
+        <tbody>
+            <tr>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+                <td></td>
+                <td>↓</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table fixed">
+        <tbody>
+            <tr>
+                <td></td>
+                <td>0</td>
+                <td>+</td>
+                <td>0</td>
+                <td>+</td>
+                <td>64</td>
+                <td>+</td>
+                <td>0</td>
+                <td>+</td>
+                <td>16</td>
+                <td>+</td>
+                <td>0</td>
+                <td>+</td>
+                <td>4</td>
+                <td>+</td>
+                <td>2</td>
+                <td>+</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="center">=</div>
+    <div class="center">86</div>
+</section>
+
+<section>
+    <h3>Binare → base 10 : méthode "mathématique"</h3>
+
+    <div class="center"><code>base^n x dn + ... + base² x d2 + base x d1</code></div>
+    <br>
+
+    <div class="incremental">
+        <div class="center">001010110</div>
+        <div class="center">↓</div>
+        <div class="center">0*2^8 + 0*2^7 + 1*2^6 + 0*2^5 + 1*2^4 + 1*2^3 + 0*2^2 + 0*2^1</div>
+        <div class="center">↓</div>
+        <div class="center">0 + 0 + 1*64 + 0 + 1*16 + 1*8 + 0 + 0</div>
+        <div class="center">↓</div>
+        <div class="center">64 + 16 + 8</div>
+
+        <div class="center">=</div>
+        <div class="center">86</div>
+    </div>
+</section>
+
+<section>
+    <h3>Exercice : convertir en base 10</h3>
+    <ul class="incremental">
+        <li><code>00001100</code></li>
+        <li><code>10101101</code></li>
+        <li><code>01000000</code></li>
+        <li><code>10010111</code></li>
+        <li><code>11110110</code></li>
+        <li><code>10110010</code></li>
+        <li><code>01100000</code></li>
+        <li><code>11010011</code></li>
+        <li><code>00101011</code></li>
+        <li><code>10110110</code></li>
+    </ul>
+</section>
+
+<section>
     <h1>Fin</h1>
 </section>
 
@@ -1259,6 +1859,10 @@ False
   .context-table td {
       border: 2px solid black;
       margin: 0;
+  }
+
+  .fixed {
+      table-layout: fixed;
   }
 
   .hidden {
