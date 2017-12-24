@@ -18,7 +18,7 @@ Documents à produire:
 progra:
 [ ] - 3 sections d'exercices
 [ ] - rajouter de l'intéractif
-[ ] - prioriter des opérateurs
+[x] - prioriter des opérateurs
 [x] - rajouter tous les exo d'examens
 [ ] - faire des excos ? Viser un exo par 15min
 [ ] - rajouter des exos intermédiaires avant ceux d'examens ?
@@ -54,9 +54,10 @@ Idées exos:
 - gestion de stock
 
 Calcul binaire
-[ ] - l'écrire
-[ ] - faire des excos
-[ ] - tabler sur 1h
+[x] - l'écrire
+[x] - faire des excos
+[x] - tabler sur 1h
+[x] - exercices
 
 -->
 
@@ -145,6 +146,17 @@ Calcul binaire
         >>> 1 + 1
         2
     </pre>
+</section>
+
+<section>
+    <h3>Astuce : utilisez l'interpréteur python</h3>
+    <ul>
+        <li>en ligne https://www.python.org/shell/</li>
+        <li>tapez "python" dans un terminal sous linux</li>
+        <li>pareil sous OSX (mais doit être installé ?)</li>
+        <li>installable sous windows</li>
+        <li>IDLE</li>
+    </ul>
 </section>
 
 <section>
@@ -487,6 +499,47 @@ False
         <li>les () pour changer la priorité<ul><li>1 + 2 * 3 → 7</li><li>(1 + 2) * 3 → 9</li></ul></li>
         <li>'print' pour afficher un élément<ul><li>print "pouet" → pouet</li><li>print [1, 2, 3][0] → 1</li></ul></li>
     </ul>
+</section>
+
+<section>
+    <h3>Priorité des opérateurs : comme en math</h3>
+    <pre>
+    >>> 1 + 2 * 3
+    7
+
+    >>> (1 + 2) * 3
+    9
+    </pre>
+</section>
+
+<section>
+    <h3>Priorité des opérateurs : avancé</h3>
+    <ul>
+        <li>"math"</li>
+        <li>&gt;&gt;&gt;</li>
+        <li>comparaisons (==, &gt;, ...)</li>
+        <li>&gt;&gt;&gt;</li>
+        <li>logique booléenne (and/or) </li>
+    </ul>
+    <pre>
+    >>> 1 + 2 >= 3 and 4 < 5 * 6
+
+    </pre>
+</section>
+
+<section>
+    <h3>Priorité des opérateurs : avancé</h3>
+    <ul>
+        <li>"math"</li>
+        <li>&gt;&gt;&gt;</li>
+        <li>comparaisons (==, &gt;, ...)</li>
+        <li>&gt;&gt;&gt;</li>
+        <li>logique booléenne (and/or) </li>
+    </ul>
+    <pre>
+    >>> 1 + 2 >= 3 and 4 < 5 * 6
+    True
+    </pre>
 </section>
 
 <section>
@@ -1024,12 +1077,21 @@ False
 
 <section>
     <h3>Objectif</h3>
-    <ul>
+    <ul class="incremental">
         <li>utilisé dans quasi chaque fois une question théorique</li>
         <li>être à l'aise avec ça</li>
         <li>pas y passer trop de temps</li>
         <li>base 2 → base 10</li>
         <li>base 10 → base 2</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Vocabulaire</h3>
+    <ul>
+        <li>Bit : une unité, 0 ou 1, équivalent d'un chiffre</li>
+        <li>Byte : 8 bits (quasi tout le temps)</li>
+        <li>Octet : 8 bits (tout le temps)</li>
     </ul>
 </section>
 
@@ -3072,6 +3134,10 @@ False
 
   .two-columns > div {
       flex-grow: 1;
+  }
+
+  .two-columns > div:first-child {
+      padding-right: 15px;
   }
 
   .context-table {
