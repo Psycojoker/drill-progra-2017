@@ -758,6 +758,7 @@ Calcul binaire
             self.nom = nom
 
     solvay = CercleEtudiant("solvay")
+    solvay.nom  # "solvay"
     </pre>
 </section>
 
@@ -776,10 +777,11 @@ Calcul binaire
             self.membres.remove(nom)
 
     solvay = CercleEtudiant("solvay")
-    solvay.ajouter_un_membre("Jean-Michel")
     solvay.ajouter_un_membre("Gertrude")
     solvay.ajouter_un_membre("Mélanchon")
+    solvay.membres  # ["Gertrude", "Mélanchon"]
     solvay.retirer_un_membre("Mélanchon")
+    solvay.membres  # ["Gertrude"]
     </pre>
 </section>
 
@@ -856,6 +858,21 @@ Calcul binaire
 
 <section>
     <img style="height: 100%" src="./img/exo_python_11.png">
+</section>
+
+<section>
+    <div  style="max-height: 100%" class="two-columns">
+        <div>
+            <img style="max-height: 100%; max-width: 100%" src="./img/exo_python_12.png">
+        </div>
+        <div>
+            <img style="max-height: 100%; max-width: 100%" src="./img/exo_python_12_2.jpeg">
+        </div>
+    </div>
+</section>
+
+<section>
+    <img style="height: 100%" src="./img/photo_question_python.jpeg">
 </section>
 
 <section>
@@ -1005,6 +1022,63 @@ Calcul binaire
 </section>
 
 <section>
+    <h3>NULL</h3>
+    <div>
+        <pre>
+    SELECT titre
+    FROM LIVRE
+    WHERE LIVRE.editor IS (NOT) NULL
+        </pre>
+    </div>
+</section>
+
+<section>
+    <h3>LIKE</h3>
+    <div>
+        <pre>
+    SELECT titre
+    FROM LIVRE
+    WHERE LIVRE.titre LIKE "%napol_on%"
+        </pre>
+    </div>
+</section>
+
+<section>
+    <h3>Aggregats : count, avg, min, max, sum</h3>
+    <div>
+        <pre>
+    SELECT count(*), avg(prix), max(prix), min(prix), sum(price)
+    FROM LIVRE
+    WHERE LIVRE.titre LIKE "%napol_on%"
+        </pre>
+    </div>
+</section>
+
+<section>
+    <h3>Sous requète</h3>
+    <div>
+        <pre>
+    SELECT ...
+    FROM LIVRE
+    WHERE condition test (SELECT ... FROM ...)
+        </pre>
+    </div>
+</section>
+
+<section>
+    <h3>Union</h3>
+    <div>
+        <pre>
+    SELECT ...
+    FROM LIVRE
+    UNION [ALL]
+    SELECT ...
+    FROM LIVRE
+        </pre>
+    </div>
+</section>
+
+<section>
     <h3>SELECT Jointures</h3>
     <div class="two-columns">
         <div>
@@ -1022,10 +1096,6 @@ Calcul binaire
             <img style="width: 100%; height: 100%" src="img/resolution_sql_1.png" />
         </div>
     </div>
-</section>
-
-<section>
-    <h2>TODO: aggregats (count, avg, ...)</h2>
 </section>
 
 <section>
@@ -1186,6 +1256,17 @@ Calcul binaire
 
 <section>
     <img style="max-height: 100%; max-width: 100%" src="./img/exo_sql_11.png">
+</section>
+
+<section>
+    <img style="max-height: 100%; max-width: 100%" src="./img/exo_sql_12.png">
+</section>
+
+<section>
+    <div>
+        <br>
+        <img style="width: 100%; height: 100%" src="img/solution_sql_12.png" />
+    </div>
 </section>
 
 <section>
