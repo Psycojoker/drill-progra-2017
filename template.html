@@ -22,7 +22,7 @@ progra:
 [x] - rajouter tous les exo d'examens
 [ ] - faire des excos ? Viser un exo par 15min
 [ ] - rajouter des exos intermédiaires avant ceux d'examens ?
-[ ] - fixer les slides qui dépassent
+[x] - fixer les slides qui dépassent
 
 [ ] - FAUT VOIR L'ORIENTÉ OBJET
 [ ] - faire dans une autre partie
@@ -102,6 +102,16 @@ Calcul binaire
         <li><b>comprendre</b> un programme python</li>
         <li>être capable d'en déterminer l'execution</li>
         <li>... pour pouvoir afficher le résultat</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Motivations possibles pour vous</h3>
+    <ul>
+        <li>automatisation</li>
+        <li>analyse de données / BI</li>
+        <li>facile mais puissant</li>
+        <li>massivement utilisé (youtube, instagram, pinterest, nasa, spotify, ...)</li>
     </ul>
 </section>
 
@@ -394,6 +404,12 @@ Calcul binaire
     <ul class="incremental">
         <li>contient une "liste" de n'importe quoi<ul><li>[1, "a", 42.3]</li><li>lettres = ["a", "b", "c"]</li></ul></li>
         <li>accès:<ul><li>["a", "b", "c"][0] → "a"</li><li>commence à <b>ZERO</b> et pas à 1 !</li><li>["a", "b", "c"][1] → "b"</li></ul></li>
+    </ul>
+</section>
+
+<section>
+    <h3>Les listes</h3>
+    <ul>
         <li>modification:<ul><li>lettres = ["a", "b", "c"]</li><li>lettres[0] = "pouet"</li><li>lettres → ["pouet", "b", "c"]</li></ul></li>
     </ul>
 </section>
@@ -686,6 +702,107 @@ Calcul binaire
     >>> a = 3
     >>> fonction(4)
     4
+    </pre>
+</section>
+
+<section>
+    <h2>L'orienté objet</h2>
+</section>
+
+<section>
+    <h3>Concepts</h3>
+    <ul>
+        <li>class : blueprint, défini un nouveau type</li>
+        <li>objet : "instance" d'une classe</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Exemple déjà présent</h3>
+    <ul class="incremental">
+        <li>les listes : <code>list() == []</code></li>
+        <li>les strings : <code>str() == ""</code></li>
+        <li>... en fait tout est "objet" en python</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Définition et "instanciation"</h3>
+    <pre>
+    class NomDeLaClass():
+        pass
+
+    truc = NomDeLaClass()
+
+    # équivalent à truc = [] pour les listes
+    </pre>
+</section>
+
+<section>
+    <h3>Constructeur</h3>
+    <pre>
+    class NomDeLaClass():
+        def __init__(self, argument1, argument2, ...):
+            ...
+
+    truc = NomDeLaClass(argument1, argument2, ...)
+    </pre>
+</section>
+
+<section>
+    <h3>Constructeur</h3>
+    <pre>
+    class CercleEtudiant():
+        def __init__(self, nom):
+            # self : référence à l'instance
+            self.nom = nom
+
+    solvay = CercleEtudiant("solvay")
+    </pre>
+</section>
+
+<section>
+    <h3>Méthodes</h3>
+    <pre>
+    class CercleEtudiant():
+        def __init__(self, nom):
+            self.nom = nom
+            self.membres = []
+
+        def ajouter_un_membre(self, nom):
+            self.membres.append(nom)
+
+        def retirer_un_membre(self, nom):
+            self.membres.remove(nom)
+
+    solvay = CercleEtudiant("solvay")
+    solvay.ajouter_un_membre("Jean-Michel")
+    solvay.ajouter_un_membre("Gertrude")
+    solvay.ajouter_un_membre("Mélanchon")
+    solvay.retirer_un_membre("Mélanchon")
+    </pre>
+</section>
+
+<section>
+    <h3>Héritage, polymorphisme</h3>
+    <pre>
+    class Transport(): ...
+
+    class Train(Transport):
+        def voyager(self, destination):
+            # rapide mais pas flexible
+
+    class Voiture(Transport):
+        def voyager(self, destination):
+            # plus lent mais plus flexible
+
+    def aller_à_paris(moyen_de_transport):
+        moyen_de_transport.voyager("Paris")
+
+    tgv = Train()
+    covoiturage = Voiture()
+    aller_à_paris(tgv)
+    aller_à_paris(covoiturage)
     </pre>
 </section>
 
