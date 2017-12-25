@@ -201,6 +201,90 @@ Calcul binaire
 </section>
 
 <section>
+    <h3>Base : comme en math (suite)</h3>
+    <pre>
+        >>> 17 % 12
+
+
+
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Base : comme en math (suite)</h3>
+    <pre>
+        >>> 17 % 12
+        5
+
+
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Base : comme en math (suite)</h3>
+    <pre>
+        >>> 17 % 12
+        5
+
+        >>> 43 % 2
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Base : comme en math (suite)</h3>
+    <pre>
+        >>> 17 % 12
+        5
+
+        >>> 43 % 2
+        1
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Base : comme en math (suite)</h3>
+    <pre>
+        >>> 17 % 12
+        5
+
+        >>> 43 % 2
+        1
+
+        >>> 137 % 5
+
+    </pre>
+</section>
+
+<section>
+    <h3>Base : comme en math (suite)</h3>
+    <pre>
+        >>> 17 % 12
+        5
+
+        >>> 43 % 2
+        1
+
+        >>> 137 % 5
+        2
+    </pre>
+</section>
+
+<section>
     <h3>Les assignations</h3>
     <div class="two-columns">
         <div>
@@ -274,6 +358,40 @@ Calcul binaire
                 <tr>
                     <td>b</td>
                     <td>3</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Les assignations</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> a = 1
+    >>> a
+    1
+
+    >>> b = 3
+    >>> b
+    3
+
+    >>> b = a
+    >>> b
+    ?
+            </pre>
+        </div>
+        <div>
+            <small>Le contexte</small>
+            <table class="table context-table">
+                <tr>
+                    <td>a</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td>?</td>
                 </tr>
             </table>
         </div>
@@ -449,6 +567,860 @@ Calcul binaire
 </section>
 
 <section>
+    <h3>Types avancés</h3>
+    <pre>
+    >>> ["solvay", "ulb", "artichaut"][0]
+    ?
+
+
+
+
+
+
+
+
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Types avancés</h3>
+    <pre>
+    >>> ["solvay", "ulb", "artichaut"][0]
+    "solvay"
+
+
+
+
+
+
+
+
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Types avancés</h3>
+    <pre>
+    >>> ["solvay", "ulb", "artichaut"][0]
+    "solvay"
+
+    >>> {"a": 32, "c": False, "caramba": ["ulb"]}["c"]
+    ?
+
+
+
+
+
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Types avancés</h3>
+    <pre>
+    >>> ["solvay", "ulb", "artichaut"][0]
+    "solvay"
+
+    >>> {"a": 32, "c": False, "caramba": ["ulb"]}["c"]
+    False
+
+
+
+
+
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Types avancés</h3>
+    <pre>
+    >>> ["solvay", "ulb", "artichaut"][0]
+    "solvay"
+
+    >>> {"a": 32, "c": False, "caramba": ["ulb"]}["c"]
+    False
+
+    >>> {"a": 32, "caramba": ["ulb", "pouet"]}["caramba"][1]
+    ?
+
+
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Types avancés</h3>
+    <pre>
+    >>> ["solvay", "ulb", "artichaut"][0]
+    "solvay"
+
+    >>> {"a": 32, "c": False, "caramba": ["ulb"]}["c"]
+    False
+
+    >>> {"a": 32, "caramba": ["ulb", "pouet"]}["caramba"][1]
+    "pouet"
+
+
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Types avancés</h3>
+    <pre>
+    >>> ["solvay", "ulb", "artichaut"][0]
+    "solvay"
+
+    >>> {"a": 32, "c": False, "caramba": ["ulb"]}["c"]
+    False
+
+    >>> {"a": 32, "caramba": ["ulb", "pouet"]}["caramba"][1]
+    "pouet"
+
+    >>> {"a": 32, "c": False, "caramba": ["ulb", "pouet"]}["b"][1]
+    ?
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Types avancés</h3>
+    <pre>
+    >>> ["solvay", "ulb", "artichaut"][0]
+    "solvay"
+
+    >>> {"a": 32, "c": False, "caramba": ["ulb"]}["c"]
+    False
+
+    >>> {"a": 32, "caramba": ["ulb", "pouet"]}["caramba"][1]
+    "pouet"
+
+    >>> {"a": 32, "c": False, "caramba": ["ulb", "pouet"]}["b"][1]
+    ** erreur **
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Types avancés</h3>
+    <pre>
+    >>> ["solvay", "ulb", "artichaut"][0]
+    "solvay"
+
+    >>> {"a": 32, "c": False, "caramba": ["ulb"]}["c"]
+    False
+
+    >>> {"a": 32, "caramba": ["ulb", "pouet"]}["caramba"][1]
+    "pouet"
+
+    >>> {"a": 32, "c": False, "caramba": ["ulb", "pouet"]}["b"][1]
+    ** erreur **
+
+    >>> (42, 563, 67, 43)[2]
+    ?
+    </pre>
+</section>
+
+<section>
+    <h3>Types avancés</h3>
+    <pre>
+    >>> ["solvay", "ulb", "artichaut"][0]
+    "solvay"
+
+    >>> {"a": 32, "c": False, "caramba": ["ulb"]}["c"]
+    False
+
+    >>> {"a": 32, "caramba": ["ulb", "pouet"]}["caramba"][1]
+    "pouet"
+
+    >>> {"a": 32, "c": False, "caramba": ["ulb", "pouet"]}["b"][1]
+    ** erreur **
+
+    >>> (42, 563, 67, 43)[2]
+    67
+    </pre>
+</section>
+
+<section>
+    <h3>Types avancés</h3>
+    <pre>
+    >>> a = ["solvay", "ulb", "artichaut"]
+    >>> a[2] = 30
+    >>> a
+    ?
+
+
+
+
+
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Types avancés</h3>
+    <pre>
+    >>> a = ["solvay", "ulb", "artichaut"]
+    >>> a[2] = 30
+    >>> a
+    ["solvay", "ulb", 30]
+
+
+
+
+
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Types avancés</h3>
+    <pre>
+    >>> a = ["solvay", "ulb", "artichaut"]
+    >>> a[2] = 30
+    >>> a
+    ["solvay", "ulb", 30]
+
+    >>> c = {"pouet": 42}
+    >>> c["pouet"] = 3
+    >>> c
+    ?
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Types avancés</h3>
+    <pre>
+    >>> a = ["solvay", "ulb", "artichaut"]
+    >>> a[2] = 30
+    >>> a
+    ["solvay", "ulb", 30]
+
+    >>> c = {"pouet": 42}
+    >>> c["pouet"] = 3
+    >>> c
+    {"pouet": 3}
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Types avancés</h3>
+    <pre>
+    >>> a = ["solvay", "ulb", "artichaut"]
+    >>> a[2] = 30
+    >>> a
+    ["solvay", "ulb", 30]
+
+    >>> c = {"pouet": 42}
+    >>> c["pouet"] = 3
+    >>> c
+    {"pouet": 3}
+
+    >>> c["plif"] = "plouf"
+    >>> c
+    ?
+    </pre>
+</section>
+
+<section>
+    <h3>Types avancés</h3>
+    <pre>
+    >>> a = ["solvay", "ulb", "artichaut"]
+    >>> a[2] = 30
+    >>> a
+    ["solvay", "ulb", 30]
+
+    >>> c = {"pouet": 42}
+    >>> c["pouet"] = 3
+    >>> c
+    {"pouet": 3}
+
+    >>> c["plif"] = "plouf"
+    >>> c
+    {"pouet": 3, "plif": "plouf"}
+    </pre>
+</section>
+
+<section>
+    <h3>Logique booléenne</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> True and True
+
+
+
+
+
+
+
+
+
+
+            </pre>
+        </div>
+        <div>
+            <pre>
+
+
+
+
+
+
+
+
+
+
+
+            </pre>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Logique booléenne</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> True and True
+    True
+
+
+
+
+
+
+
+
+
+            </pre>
+        </div>
+        <div>
+            <pre>
+
+
+
+
+
+
+
+
+
+
+
+            </pre>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Logique booléenne</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> True and True
+    True
+
+    >>> True and False
+
+
+
+
+
+
+
+            </pre>
+        </div>
+        <div>
+            <pre>
+
+
+
+
+
+
+
+
+
+
+
+            </pre>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Logique booléenne</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> True and True
+    True
+
+    >>> True and False
+    False
+
+
+
+
+
+
+            </pre>
+        </div>
+        <div>
+            <pre>
+
+
+
+
+
+
+
+
+
+
+
+            </pre>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Logique booléenne</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> True and True
+    True
+
+    >>> True and False
+    False
+
+    >>> False and True
+
+
+
+
+            </pre>
+        </div>
+        <div>
+            <pre>
+
+
+
+
+
+
+
+
+
+
+
+            </pre>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Logique booléenne</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> True and True
+    True
+
+    >>> True and False
+    False
+
+    >>> False and True
+    False
+
+
+
+            </pre>
+        </div>
+        <div>
+            <pre>
+
+
+
+
+
+
+
+
+
+
+
+            </pre>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Logique booléenne</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> True and True
+    True
+
+    >>> True and False
+    False
+
+    >>> False and True
+    False
+
+    >>> False and False
+
+            </pre>
+        </div>
+        <div>
+            <pre>
+
+
+
+
+
+
+
+
+
+
+
+            </pre>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Logique booléenne</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> True and True
+    True
+
+    >>> True and False
+    False
+
+    >>> False and True
+    False
+
+    >>> False and False
+    False
+            </pre>
+        </div>
+        <div>
+            <pre>
+
+
+
+
+
+
+
+
+
+
+
+            </pre>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Logique booléenne</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> True and True
+    True
+
+    >>> True and False
+    False
+
+    >>> False and True
+    False
+
+    >>> False and False
+    False
+            </pre>
+        </div>
+        <div>
+            <pre>
+    >>> True or True
+
+
+
+
+
+
+
+
+
+
+            </pre>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Logique booléenne</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> True and True
+    True
+
+    >>> True and False
+    False
+
+    >>> False and True
+    False
+
+    >>> False and False
+    False
+            </pre>
+        </div>
+        <div>
+            <pre>
+    >>> True or True
+    True
+
+
+
+
+
+
+
+
+
+            </pre>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Logique booléenne</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> True and True
+    True
+
+    >>> True and False
+    False
+
+    >>> False and True
+    False
+
+    >>> False and False
+    False
+            </pre>
+        </div>
+        <div>
+            <pre>
+    >>> True or True
+    True
+
+    >>> True or False
+
+
+
+
+
+
+
+            </pre>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Logique booléenne</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> True and True
+    True
+
+    >>> True and False
+    False
+
+    >>> False and True
+    False
+
+    >>> False and False
+    False
+            </pre>
+        </div>
+        <div>
+            <pre>
+    >>> True or True
+    True
+
+    >>> True or False
+    True
+
+
+
+
+
+
+            </pre>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Logique booléenne</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> True and True
+    True
+
+    >>> True and False
+    False
+
+    >>> False and True
+    False
+
+    >>> False and False
+    False
+            </pre>
+        </div>
+        <div>
+            <pre>
+    >>> True or True
+    True
+
+    >>> True or False
+    True
+
+    >>> False or True
+
+
+
+
+            </pre>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Logique booléenne</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> True and True
+    True
+
+    >>> True and False
+    False
+
+    >>> False and True
+    False
+
+    >>> False and False
+    False
+            </pre>
+        </div>
+        <div>
+            <pre>
+    >>> True or True
+    True
+
+    >>> True or False
+    True
+
+    >>> False or True
+    True
+
+
+
+            </pre>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Logique booléenne</h3>
+    <div class="two-columns">
+        <div>
+            <pre>
+    >>> True and True
+    True
+
+    >>> True and False
+    False
+
+    >>> False and True
+    False
+
+    >>> False and False
+    False
+            </pre>
+        </div>
+        <div>
+            <pre>
+    >>> True or True
+    True
+
+    >>> True or False
+    True
+
+    >>> False or True
+    True
+
+    >>> False or False
+
+            </pre>
+        </div>
+    </div>
+</section>
+
+<section>
     <h3>Logique booléenne</h3>
     <div class="two-columns">
         <div>
@@ -488,6 +1460,39 @@ Calcul binaire
     <h3>Logique booléenne (suite)</h3>
     <pre>
     >>> not True
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Logique booléenne (suite)</h3>
+    <pre>
+    >>> not True
+    False
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Logique booléenne (suite)</h3>
+    <pre>
+    >>> not True
+    False
+
+    >>> not False
+
+    </pre>
+</section>
+
+<section>
+    <h3>Logique booléenne (suite)</h3>
+    <pre>
+    >>> not True
     False
 
     >>> not False
@@ -515,6 +1520,39 @@ Calcul binaire
         <li>les () pour changer la priorité<ul><li>1 + 2 * 3 → 7</li><li>(1 + 2) * 3 → 9</li></ul></li>
         <li>'print' pour afficher un élément<ul><li>print "pouet" → pouet</li><li>print [1, 2, 3][0] → 1</li></ul></li>
     </ul>
+</section>
+
+<section>
+    <h3>Priorité des opérateurs : comme en math</h3>
+    <pre>
+    >>> 1 + 2 * 3
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Priorité des opérateurs : comme en math</h3>
+    <pre>
+    >>> 1 + 2 * 3
+    7
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>Priorité des opérateurs : comme en math</h3>
+    <pre>
+    >>> 1 + 2 * 3
+    7
+
+    >>> (1 + 2) * 3
+
+    </pre>
 </section>
 
 <section>
@@ -567,6 +1605,86 @@ Calcul binaire
     <pre>
     >>> if True:
             print "s'affiche"
+
+
+
+
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>if</h3>
+    <pre>
+    >>> if True:
+            print "s'affiche"
+    s'affiche
+
+
+
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>if</h3>
+    <pre>
+    >>> if True:
+            print "s'affiche"
+    s'affiche
+
+    >>> if False:
+            print "s'affiche pas"
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>if</h3>
+    <pre>
+    >>> if True:
+            print "s'affiche"
+    s'affiche
+
+    >>> if False:
+            print "s'affiche pas"
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>if</h3>
+    <pre>
+    >>> if True:
+            print "s'affiche"
+    s'affiche
+
+    >>> if False:
+            print "s'affiche pas"
+
+    >>> if 1 == 1:
+            print "s'affiche"
+
+    </pre>
+</section>
+
+<section>
+    <h3>if</h3>
+    <pre>
+    >>> if True:
+            print "s'affiche"
     s'affiche
 
     >>> if False:
@@ -605,6 +1723,57 @@ Calcul binaire
             print "if"
         else:
             print "else"
+
+
+
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>if/else</h3>
+    <pre>
+    >>> if True:
+            print "if"
+        else:
+            print "else"
+    if
+
+
+
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>if/else</h3>
+    <pre>
+    >>> if True:
+            print "if"
+        else:
+            print "else"
+    if
+
+    >>> if False:
+            print "if"
+        else:
+            print "else"
+
+    </pre>
+</section>
+
+<section>
+    <h3>if/else</h3>
+    <pre>
+    >>> if True:
+            print "if"
+        else:
+            print "else"
     if
 
     >>> if False:
@@ -612,6 +1781,19 @@ Calcul binaire
         else:
             print "else"
     else
+    </pre>
+</section>
+
+<section>
+    <h3>if/elif/else</h3>
+    <pre>
+    >>> if False:
+            print "if"
+        elif True:
+            print "elif"
+        else:
+            print "else"
+
     </pre>
 </section>
 
@@ -639,7 +1821,35 @@ Calcul binaire
             print "elif2"
         else:
             print "else"
+
+    </pre>
+</section>
+
+<section>
+    <h3>if/elif/else (suite)</h3>
+    <pre>
+    >>> if False:
+            print "if"
+        elif False:
+            print "elif"
+        elif True:
+            print "elif2"
+        else:
+            print "else"
     elif2
+    </pre>
+</section>
+
+<section>
+    <h3>while</h3>
+    <pre>
+    >>> a = 0
+    >>> while a < 3:
+            print a
+            a += 1
+
+
+
     </pre>
 </section>
 
@@ -661,6 +1871,17 @@ Calcul binaire
     <pre>
     >>> for i in ["a", "b", "c"]:
             print i
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>for</h3>
+    <pre>
+    >>> for i in ["a", "b", "c"]:
+            print i
     a
     b
     c
@@ -672,9 +1893,35 @@ Calcul binaire
     <pre>
     >>> for i in "abc":
             print i
+
+
+
+    </pre>
+</section>
+
+<section>
+    <h3>for</h3>
+    <pre>
+    >>> for i in "abc":
+            print i
     a
     b
     c
+    </pre>
+</section>
+
+<section>
+    <h3>fonctions</h3>
+    <pre>
+    >>> def fonction(argument1, argument2, argument3):
+            print argument1
+            print argument2
+            print argument3
+
+    >>> fonction("a", "b", "c")
+
+
+
     </pre>
 </section>
 
@@ -813,11 +2060,11 @@ Calcul binaire
 </section>
 
 <section>
-    <img style="height: 100%" src="./example.png">
+    <img style="height: 100%" src="./img/exo_python_1.png">
 </section>
 
 <section>
-    <img style="height: 100%" src="./img/exo_python_1.png">
+    <img style="height: 100%" src="./example.png">
 </section>
 
 <section>
